@@ -13,7 +13,7 @@ int main() {
     bool valid = true;
     int dayMax;
 
-    // 2. Kiem tra thang
+    // 2. Kiem tra thang, ngay, nam valid ( year >= 1970)
     if (month < 1 || month > 12 || day > 31 || day < 1 || year < 1970 ) {
         valid = false;
     } else {
@@ -41,9 +41,6 @@ int main() {
                 } else {
                     dayMax = 28; // Nam ko nhuan
                 }
-                break;
-            default:
-                printf ("Khong hop le! vui long nhap vao thang tu 1 - 12");
                 break;
         }
 

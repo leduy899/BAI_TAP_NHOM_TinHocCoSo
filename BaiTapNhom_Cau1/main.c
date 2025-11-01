@@ -6,7 +6,7 @@ int main(void){
     printf("100 số nguyên tố đầu tiên mà thầy Hùng thích là: \n");
     for (number = 2; primeCount < 100; number++) {
         count = 0;
-        for (i = 2; i < number/2 ; i++) {
+        for (i = 2; i <= sqrt(number) ; i++) {
             if (number%i==0)
                 count++;
         }
